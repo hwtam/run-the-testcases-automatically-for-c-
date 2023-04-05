@@ -8,7 +8,7 @@ Basically for hkust students taking comp c++ courses (I don't know how other sch
 - Put the 'batch.py' into the same folder of your main c++ program
 - Put the testcases into a folder named "testcase"
 
-The path of your main program may be "your_folder_name/pa1.cpp"
+The path of your main program may be "your_folder_name/pa1.exe"
 
 The path of the testcases may be "your_folder_name/testcase/input01.txt"
 
