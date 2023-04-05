@@ -4,7 +4,7 @@ a = "pa2 < testcase/input0"
 b = ".txt > myOutput0"
 c = ".txt"
 
-####### cahnge this
+####### change this
 num = 8 
 ####### change this
 
