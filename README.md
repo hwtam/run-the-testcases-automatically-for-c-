@@ -27,4 +27,4 @@ You can see that "myOutput01.txt" to "myOutput08.txt" are generated!!
 
 - You can change the number of testcases you want to generate. Just change the number in the patch.py
 
-- (If you change num to 8, it equals to generate "myOutputXX.txt" from 01 to 08 [remember that it is not start from 0 XD] )
+- If you change num to 8, it equals to generate "myOutputXX.txt" from 01 to 08. [remember that it is not start from 0 XD]
