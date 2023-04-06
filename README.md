@@ -6,6 +6,11 @@ Basically for hkust students taking comp c++ courses (I don't know how other sch
 
 (However, you may watch [How if you are not hkust student but still facing similiar problem when your professor tells you to compare your output with given sample input and output?](https://github.com/hwtam/run-the-testcases-automatically-for-cpp/blob/main/README.md#how-if-you-are-not-hkust-student-but-still-facing-similiar-problem-when-your-professor-tells-you-to-compare-your-output-with-given-sample-input-and-output) before leaving.)
 
+## How to get the "batch.py"?
+
+ - You can download the zip from < Code > in github
+ - extract "batch.py" from the zip
+
 ## How to use?
 - Put the 'batch.py' into the same folder of your main c++ program
 - Make sure your testcases are in/within that folder too
