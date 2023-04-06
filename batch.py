@@ -5,7 +5,8 @@ os.system("cls")
 file_name = glob.glob("*.exe")
 fn = file_name[0].split('.')[0]    #the file name of the testing program
 input_cases = glob.glob("./**/input*.txt", recursive = True)
-input_cases.extend(glob.glob("./input*.txt"))    #list of sample input files
+if not(input_cases) :
+  input_cases.extend(glob.glob("./input*.txt"))    #list of sample input files
 
 print("Testing for : " + fn)
 
