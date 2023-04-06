@@ -24,7 +24,7 @@ try :
 #  Actually, I know that I can use filecmp.cmp() to compare two files.
 #  However, I found that 2 files with the same content(look like the same) may have different file size due to the encoding ???
 #  filecmp.cmp() may return False while 2 text file look like exactly same
-#  I compare 2 files using the method below and it return True(that's what i want), so i use it
+#  I compare 2 files using the method below and it return True(that's what I want), so I use it
 #  If you know what is the problem, please tell me.
 ###
     with open("myOutput" + cn[5:]) as myOut, open(address + "output" + cn[5:]) as out :
