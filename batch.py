@@ -4,9 +4,7 @@ import glob
 os.system("cls")    #clear the terminal if you are using VScode(or maybe other IDE)
 file_name = glob.glob("*.exe")
 fn = file_name[0].split('.')[0]    #the file name of the testing program
-input_cases = glob.glob("./**/input*.txt", recursive = True)
-if not(input_cases) :
-  input_cases.extend(glob.glob("./input*.txt"))    #list of sample input files
+input_cases = glob.glob("./**/input*.txt", recursive = True)    #list of sample input files
 
 print("Testing for : " + fn)
 
@@ -25,7 +23,7 @@ try :
 #  Actually, I know that I can use filecmp.cmp() to compare two files.
 #  However, I found that 2 files with the same content(look like the same) may have different file size due to the encoding ???
 #  filecmp.cmp() may return False while 2 text file look like exactly same
-#  I compare 2 files using the method below and it return True(that's what I want), so I use it
+#  I compare 2 files using the method below and it return True(that's what i want), so i use it
 #  If you know what is the problem, please tell me.
 ###
     with open("myOutput" + cn[5:]) as myOut, open(address + "output" + cn[5:]) as out :
