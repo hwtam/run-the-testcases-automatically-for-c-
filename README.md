@@ -1,20 +1,20 @@
 # Run the testcases automatically for c++
 
-Feel tired of typing "pa1 < testcase/input01.txt > myOutput01.txt" again and again? Use this simple python program to do it automatically!
+Feel tired of typing "pa1 < testcase/input01.txt > myOutput01.txt" and comparing your output with the sample output again and again? Use this simple python program to do them automatically!
 
 Basically for hkust students taking comp c++ courses (I don't know how other school are doing XD)
 
 ## How to use?
 - Put the 'batch.py' into the same folder of your main c++ program
-- Put the testcases into a folder named "testcase"
-
-The path of your main program may be "your_folder_name/pa1.exe"
-
-The path of the testcases may be "your_folder_name/testcase/input01.txt"
+- Make sure your testcases are in/within that folder too
 
 For example :
 
 ![before](pics/before.png)
+
+You can see that I put the testcases into a subfolder.
+
+Everything is fine as long as the testcases are put in/within the folder where you put your main program and "batch.py"
 
 #
 
@@ -22,11 +22,40 @@ Run the "batch.py"!
 
 ![after](pics/after.png)
 
-You can see that "myOutput01.txt" to "myOutput08.txt" are generated!!
+You can see that :
 
-(Ignore my typo in the picture, it is fine in the program)
+- "myOutput01" to "myOutput08" are generated!
+- the result shown in the terminal telling you which testcases are failed.
 
-- You can change the number of testcases you want to generate. Just change the number in the patch.py
+In the terminal, it shows : 
+- the name of your main program
+- the results of each testcases
+- "DONE", telling you that the program finished successfully 
 
-- If you change num to 8, it equals to generate "myOutputXX.txt" from 01 to 08.
-[Remember that it is not start from 0 XD]
+## Why it is not working?? - Some tips/rules
+
+- Make sure python is installed in your computer.
+- Your main program and "batch.py" should be in the same folder. Their directory should be the same.
+- The sample input cases and sample output cases should be in the same folder. Their directory should be the same.
+- The folder of testcases should be inside the folder of the main program unless the tescases and the main program are in the same folder.
+
+#
+
+If the program is not working AND you can't understand the rules, you can just follow how I put my files.
+
+![before](pics/before.png)
+
+If it is still not working, please report to me.
+
+## How if you are not hkust student but still facing similiar problem when your professor tells you to compare your output with given sample input and output?
+
+You can still use this simple pyhton program!!
+
+What you need to do is just rename your testcases in the format below:
+
+![before](pics/before.png)
+
+- sample input cases -> input*.txt (* can be any string you like, but cannot be '' .)
+- sample output cases -> output*.txt (* should be equal to the * of the corresponding sample input case)
+
+Hope it can help you!
