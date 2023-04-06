@@ -4,6 +4,8 @@ Feel tired of typing "pa1 < testcase/input01.txt > myOutput01.txt" and comparing
 
 Basically for hkust students taking comp c++ courses (I don't know how other school are doing XD)
 
+(However, you may watch [How if you are not hkust student but still facing similiar problem when your professor tells you to compare your output with given sample input and output?](https://github.com/hwtam/run-the-testcases-automatically-for-cpp/blob/main/README.md#how-if-you-are-not-hkust-student-but-still-facing-similiar-problem-when-your-professor-tells-you-to-compare-your-output-with-given-sample-input-and-output) before leaving.)
+
 ## How to use?
 - Put the 'batch.py' into the same folder of your main c++ program
 - Make sure your testcases are in/within that folder too
@@ -57,5 +59,7 @@ What you need to do is just rename your testcases in the format below:
 
 - sample input cases -> input*.txt (* can be any string you like, but cannot be '' .)
 - sample output cases -> output*.txt (* should be equal to the * of the corresponding sample input case)
+
+#
 
 Hope it can help you!
