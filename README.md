@@ -57,7 +57,7 @@ What you need to do is just rename your testcases in the format below:
 
 ![before](pics/before.png)
 
-- sample input cases -> input*.txt (* can be any string you like, but cannot be '' .)
+- sample input cases -> input*.txt (* can be any number you like)
 - sample output cases -> output*.txt (* should be equal to the * of the corresponding sample input case)
 
 #
