@@ -16,7 +16,7 @@ For example :
 
 You can see that I put the testcases into a subfolder.
 
-Everything is fine as long as the testcases are put in/within the folder where you put your main program and "batch.py"
+Everything is fine as long as the testcases are put in/within the folder where you put your main program
 
 #
 
