@@ -9,7 +9,7 @@ Basically for hkust students taking comp c++ courses (I don't know how other sch
 ## How to get the "batch.py"?
 
  - You can download the zip from < Code > in github or click [this link](https://github.com/hwtam/run-the-testcases-automatically-for-cpp/archive/refs/heads/main.zip)
- - extract "batch.py" from the zip
+ - Extract "batch.py" from the zip
 
 ## How to use?
 - Put the 'batch.py' into the same folder of your main c++ program
