@@ -30,9 +30,9 @@ try :
 ###
     with open("myOutput" + cn[5:]) as myOut, open(address + "output" + cn[5:]) as out :
       if (myOut.read() == out.read()) :
-        print("No." + cn[5:-4] + " is okay.")
+        print(cn + " is okay.")
       else :
-        print("No." + cn[5:-4] + " is WRONG!!!!")    #compare myOutput file with the sample output file
+        print(cn + " is WRONG!!!!")    #compare myOutput file with the sample output file
 
   print("DONE")
 except :
