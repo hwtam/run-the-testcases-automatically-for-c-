@@ -1,7 +1,7 @@
 import os
 import glob
 
-os.system("cls")
+os.system("cls")    #clear the terminal if you are using VScode(or maybe other IDE)
 file_name = glob.glob("*.exe")
 fn = file_name[0].split('.')[0]    #the file name of the testing program
 input_cases = glob.glob("./**/input*.txt", recursive = True)
