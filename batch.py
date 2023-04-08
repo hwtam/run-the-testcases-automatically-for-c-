@@ -7,7 +7,7 @@ os.system("g++ -std=c++11 -o " + fn + ' ' + file_name[0])    # compile the progr
 # "-std=c++11 " is not a must but it is required in the hkust comp courses(c++)
 # if you don't need to use this, replace the code with : os.system("g++ -o " + fn + ' ' + file_name[0])
 
-os.system("cls")    # clear the terminal if you are using VScode(or maybe other IDE)
+os.system("cls")    # clear the terminal
 input_cases = glob.glob("./**/input*.txt", recursive = True)    # list of sample input files
 print("Testing for : " + fn)
 
