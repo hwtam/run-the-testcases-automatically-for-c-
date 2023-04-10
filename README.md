@@ -1,4 +1,4 @@
-# Run the testcases automatically for c++
+# Run the testcases automatically for c++ assignments
 
 Feel tired of typing "pa1 < testcase/input01.txt > myOutput01.txt" and comparing your output with the sample output again and again? Use this simple python program to do them automatically!
 
