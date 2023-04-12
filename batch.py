@@ -1,5 +1,6 @@
 import os
 import glob
+import subprocess
 
 file_name = glob.glob("*.cpp")
 fn = file_name[0].split('.')[0]    # the file name of the testing program
@@ -7,15 +8,16 @@ try :
   os.remove(fn + ".exe")
 except :
   pass
-os.system("g++ -std=c++11 -o " + fn + ' ' + file_name[0])    # compile the program
+subprocess.run("g++ -std=c++11 -o " + fn + ' ' + file_name[0], shell = True)    # compile the program
 # "-std=c++11 " is not a must but it is required in the hkust comp courses(c++)
 # if you don't need to use this, replace the code with : os.system("g++ -o " + fn + ' ' + file_name[0])
 
 if not(os.path.isfile(fn + ".exe")) :
-  os.system("cls & g++ -std=c++11 -o " + fn + ' ' + file_name[0] + "& pause")    #show the compilation error and end the program
+  subprocess.run("cls", shell = True)    # clear the terminal
+  os.system("cmd /k g++ -std=c++11 -o " + fn + ' ' + file_name[0])    #show the compilation error and end the program
 else :
 
-  os.system("cls")    # clear the terminal
+  subprocess.run("cls", shell = True)    # clear the terminal
   input_cases = glob.glob("./**/input*.txt", recursive = True)    # list of sample input files
   print("Testing for : " + fn)
 
@@ -28,7 +30,7 @@ else :
         address += c[i] + '/'
       address.rstrip('/')    # the address of the input file
       
-      os.system(fn + " < " + address + cn + " > myOutput" + cn[5:])    # generate myOutput file by given sample input case
+      subprocess.run(fn + " < " + address + cn + " > myOutput" + cn[5:], shell = True)    # generate myOutput file by given sample input case
 
 ###
 #  Actually, I know that I can use filecmp.cmp() to compare two files.
