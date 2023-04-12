@@ -44,7 +44,7 @@ In the terminal, it shows :
 
 - If there is/are compilation error(s) in your cpp program, then you can see something similar to the below photo :
 
-![compilation error](compilation error.jpg)
+![compilation error](pics/compilation error.jpg)
 
 #
 
