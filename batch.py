@@ -3,24 +3,32 @@ import glob
 
 file_name = glob.glob("*.cpp")
 fn = file_name[0].split('.')[0]    # the file name of the testing program
+try :
+  os.remove(fn + ".exe")
+except :
+  pass
 os.system("g++ -std=c++11 -o " + fn + ' ' + file_name[0])    # compile the program
 # "-std=c++11 " is not a must but it is required in the hkust comp courses(c++)
 # if you don't need to use this, replace the code with : os.system("g++ -o " + fn + ' ' + file_name[0])
 
-os.system("cls")    # clear the terminal
-input_cases = glob.glob("./**/input*.txt", recursive = True)    # list of sample input files
-print("Testing for : " + fn)
+if not(os.path.isfile(fn + ".exe")) :
+  os.system("cls & g++ -std=c++11 -o " + fn + ' ' + file_name[0] + "& pause")    #show the compilation error and end the program
+else :
 
-try : 
-  for case in input_cases :
-    c = case.split('\\')
-    address = ''
-    cn = c[len(c)-1]    # the filename of the input file
-    for i in range(1, len(c)-1) :
-      address += c[i] + '/'
-    address.rstrip('/')    # the address of the input file
-    
-    os.system(fn + " < " + address + cn + " > myOutput" + cn[5:])    # generate myOutput file by given sample input case
+  os.system("cls")    # clear the terminal
+  input_cases = glob.glob("./**/input*.txt", recursive = True)    # list of sample input files
+  print("Testing for : " + fn)
+
+  try : 
+    for case in input_cases :
+      c = case.split('\\')
+      address = ''
+      cn = c[len(c)-1]    # the filename of the input file
+      for i in range(1, len(c)-1) :
+        address += c[i] + '/'
+      address.rstrip('/')    # the address of the input file
+      
+      os.system(fn + " < " + address + cn + " > myOutput" + cn[5:])    # generate myOutput file by given sample input case
 
 ###
 #  Actually, I know that I can use filecmp.cmp() to compare two files.
@@ -29,12 +37,12 @@ try :
 #  I compare 2 files using the method below and it return True(that's what i want), so i use it
 #  If you know what is the problem, please tell me.
 ###
-    with open("myOutput" + cn[5:]) as myOut, open(address + "output" + cn[5:]) as out :
-      if (myOut.read() == out.read()) :
-        print(cn + " is okay.")
-      else :
-        print(cn + " is WRONG!!!!")    # compare myOutput file with the sample output file
+      with open("myOutput" + cn[5:]) as myOut, open(address + "output" + cn[5:]) as out :
+        if (myOut.read() == out.read()) :
+          print(cn + " is okay.")
+        else :
+          print(cn + " is WRONG!!!!")    # compare myOutput file with the sample output file
 
-  print("DONE")
-except :
-  print("testing failed")
+    print("DONE")
+  except :
+    print("testing failed")
