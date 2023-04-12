@@ -42,12 +42,6 @@ In the terminal, it shows :
 
 ## Why it is not working?? - Some tips/rules
 
-- If there is/are compilation error(s) in your cpp program, then you can see something similar to the below photo :
-
-![error](pics/error.jpg)
-
-#
-
 - Make sure python is installed in your computer.
 - Your cpp file and "batch.py" should be in the same folder. Their directory should be the same.
 - The sample input cases and sample output cases should be in the same folder. Their directory should be the same.
