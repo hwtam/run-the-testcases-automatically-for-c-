@@ -2,7 +2,7 @@ import os
 import glob
 import subprocess
 
-os.chdir(__file__.rstrip("batch.py"))
+os.chdir(__file__.rstrip("batch.py"))    #change the working space to the folder where this program locates
 file_name = glob.glob("*.cpp")
 fn = file_name[0].split('.')[0]    # the file name of the testing program
 try :
