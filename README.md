@@ -6,7 +6,17 @@ Basically for hkust students taking comp c++ courses (I don't know how other sch
 
 (However, you may watch [How if you are not hkust student but still facing similiar problem when your professor tells you to compare your output with given sample input and output?](https://github.com/hwtam/run-the-testcases-automatically-for-cpp/blob/main/README.md#how-if-you-are-not-hkust-student-but-still-facing-similiar-problem-when-your-professor-tells-you-to-compare-your-output-with-given-sample-input-and-output) before leaving.)
 
-## How to get the "batch.py"?
+## Current version
+
+available on window, only support single cpp file
+
+## Potential updates
+
+- support Mac
+
+- support multi cpp file
+
+# How to get the "batch.py"?
 
  - You can download the zip from < Code > in github or click [this link](https://github.com/hwtam/run-the-testcases-automatically-for-cpp/archive/refs/heads/main.zip)
  - Extract "batch.py" from the zip
@@ -40,7 +50,7 @@ In the terminal, it shows :
 - the results of each testcases
 - "DONE", telling you that the program finished successfully 
 
-## Why it is not working?? - Some tips/rules
+# Why it is not working?? - Some tips/rules
 
 - Make sure python is installed in your computer.
 - Your cpp file and "batch.py" should be in the same folder. Their directory should be the same.
