@@ -49,4 +49,8 @@ What you need to do is just rename your testcases in the format below:
 
 #
 
+In case you are interested in the program, you can move to the [wiki](https://github.com/hwtam/run-the-testcases-automatically-for-cpp-assignments/wiki)
+
+#
+
 The program is unable to improve your programming skill and help you get a better grade.
