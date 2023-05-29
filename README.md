@@ -16,9 +16,7 @@ Basically for hkust students taking comp c++ courses (I don't know how other sch
 - Make sure ONLY the materials of this assignment are in the folder
 - Just don't put other .cpp files in that folder
 
-#
-
-Run the "!CppTester.py"!
+### Run the "!CppTester.py"!
 
 In the terminal, it shows : 
 - the name(s) of your cpp file(s) {remove unwanted cpp files}
@@ -31,8 +29,6 @@ In the terminal, it shows :
 - Don't use python IDLE to run the !CppTester.py
   - Use IDE(VScode for example)
 - [Open a new issue](https://github.com/hwtam/run-the-testcases-automatically-for-cpp-assignments/issues/new/choose)
-
-#
 
 You may see something like : "error", "invalid". It means that your program is WRONG.
 
@@ -47,10 +43,6 @@ What you need to do is just rename your testcases in the format below:
 - sample input cases -> input*.txt (* can be any string you like)
 - sample output cases -> output*.txt (* should be equal to the * of the corresponding sample input case)
 
-#
+## In case you are interested in the program, you can move on to the [wiki](https://github.com/hwtam/run-the-testcases-automatically-for-cpp-assignments/wiki)
 
-In case you are interested in the program, you can move to the [wiki](https://github.com/hwtam/run-the-testcases-automatically-for-cpp-assignments/wiki)
-
-#
-
-The program is unable to improve your programming skill and help you get a better grade.
+## The program is unable to improve your programming skill and help you get a better grade.
