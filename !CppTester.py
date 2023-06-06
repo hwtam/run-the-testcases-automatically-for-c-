@@ -15,7 +15,7 @@ def myOut_gen(fa, ext) :
     os.remove("myOutput" + ext)    # stop generating myOutput file and delete it
     print(fa + " may be invalid / There is a infinte loop in your program")
   except subprocess.CalledProcessError:    # if runtime error is raised
-    print("There are runtime error(s) when testing : " + fa)
+    print("There are runtime error(s) when testing : " + fa + "\n")
   except Exception as e:    # others
     print("Error in compiling : " + fa)
     #print(e)
