@@ -20,7 +20,7 @@ def myOut_gen(fa, ext) :
     print("Error in compiling : " + fa)
     #print(e)
   else :
-    return False    # return false if no erroor
+    return False    # return false if no error
   return True    # else return true
 
 # clear the terminal ,from : https://stackoverflow.com/a/36941376
