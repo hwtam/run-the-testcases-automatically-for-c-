@@ -13,7 +13,7 @@ def myOut_gen(fa, ext) :
                    else ("pkill -f mainCPP.exe") ,    # mac and linux
                    shell=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
     os.remove("myOutput" + ext)    # stop generating myOutput file and delete it
-    print(fa + " may be invalid / There is a infinte loop in your program")
+    print(fa + " may be invalid / There is an infinte loop in your program")
   except subprocess.CalledProcessError:    # if runtime error is raised
     print("There are runtime error(s) when testing : " + fa + "\n")
   except Exception as e:    # others
