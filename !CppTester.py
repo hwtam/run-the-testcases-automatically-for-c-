@@ -43,8 +43,8 @@ except :
 cpp_list = glob.glob("./**/*.cpp", recursive=True)
 
 # compilation, support seperate compilation
-str_o = "g++ -std=c++11 -c -o "
-str_exe = "g++ -std=c++11 -o mainCPP "
+str_o = "g++ -std=c++13 -c -o "
+str_exe = "g++ -std=c++13 -o mainCPP "
 flag = False
 for cpp in cpp_list :
   o = os.path.basename(cpp)[:-4] + '.o '
